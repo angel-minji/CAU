@@ -4,28 +4,67 @@
   <title>INFO - Cau</title>
   <meta charset = "utf-8">
   <style>
+  #now{
+    color:red;
+    text-decoration:underline;
+  }
   a{
     color:hotpink;
     text-decoration: none;
   }
+  h1{
+    font-size: 45px;
+    text-align: center;
+    color:purple;
+    border-bottom: 1px solid gray;
+    margin:0;
+    padding:10px;
+  }
+  .title{
+        color:purple;
+  }
+  .size{
+    font-size: 25px;
+  }
+  ol{
+    border-right: 1px solid gray;
+    margin: 0;
+    width: 130px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #inside{
+    padding-left: 40px;
+  }
+  body{
+    margin : 0;
+  }
+  #grid ol{
+    padding-top: 20px;
+  }
   </style>
 </head>
 <body>
-  <h1><a href="index.html">Cau</a></h1>
-  <ol>
-    <a href="1.html" title="Cau" style="color:red;text-decoration:underline"><li>Cau</li></a>
-    <a href="2.html" title="Portal"><li>Portal</li></a>
-    <a href="3.html" title="Dormitory"><li>Dormitory</li></a>
-  </ol>
-  <h1>Cau</h1>
-  <h2>Introducing</h2>
-  <p>중앙대학교는 서울특별시 동작구 흑석동에 위치한 학교이며 <strong>100년의 역사</strong>를 자랑하고 있습니다.
-    100주년 기념관(310관)건물은 <u>정말 좋습니다.</u> 또한 <strong>서울역, 용산역</strong>과 가까워서 <u>좋습니다.</u></p>
-  <p>하지만 학짜사달 정책으로 학점이 <u>매우 짭니다.</u> 또한 학교 주변 시설이 타 대학에 비해 <u>매우 미흡합니다.</u></p>
-  <h2>Web Site</h2>
-  <a href="https://www.cau.ac.kr/" target="_blank" title="중앙대학교" style="color:blue">중앙대학교 홈페이지 바로가기</a>
-  <h2>Logo</h2>
-  <img src = "다운로드.png" width="50%">
-
+  <h1><a href="index.html" class="title">Cau</a></h1>
+  <div id="grid">
+    <ol>
+      <a href="1.html" title="Cau" class="size" id="now"><li>Cau</li></a>
+      <a href="2.html" title="Portal"  class="size"><li>Portal</li></a>
+      <a href="3.html" title="Dormitory"  class="size"><li>Dormitory</li></a>
+    </ol>
+    <div id="inside">
+      <h2>Cau</h2>
+      <h3>Introducing</h3>
+      <p>중앙대학교는 서울특별시 동작구 흑석동에 위치한 학교이며 <strong>100년의 역사</strong>를 자랑하고 있습니다.
+        100주년 기념관(310관)건물은 <u>정말 좋습니다.</u> 또한 <strong>서울역, 용산역</strong>과 가까워서 <u>좋습니다.</u></p>
+      <p>하지만 학짜사달 정책으로 학점이 <u>매우 짭니다.</u> 또한 학교 주변 시설이 타 대학에 비해 <u>매우 미흡합니다.</u></p>
+      <h3>Web Site</h3>
+      <a href="https://www.cau.ac.kr/" target="_blank" title="중앙대학교" style="color:blue">중앙대학교 홈페이지 바로가기</a>
+      <h3>Logo</h3>
+      <img src = "다운로드.png" width="50%">
+    </div>
+  </div>
   </body>
   </html>
