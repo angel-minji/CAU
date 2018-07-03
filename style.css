@@ -1,0 +1,59 @@
+#now{
+  color:red;
+  text-decoration:underline;
+}
+a{
+  color:hotpink;
+  text-decoration: none;
+}
+h1{
+  font-size: 45px;
+  text-align: center;
+  color:purple;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding:10px;
+}
+.title{
+      color:purple;
+}
+.size{
+  font-size: 25px;
+}
+ol{
+  border-right: 1px solid gray;
+  margin: 0;
+  width: 130px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#inside{
+  padding-left: 40px;
+}
+body{
+  margin : 0;
+}
+#grid ol{
+  padding-top: 20px;
+}
+@media (max-width : 600px) {
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right: none;
+  }
+  h1{
+    border-bottom: none;
+  }
+  #inside{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  h2{
+    font-size: 35px;
+    text-align: center;
+  }
+}
